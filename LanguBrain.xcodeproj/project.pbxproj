@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16E5CCC1807D5DE6768A93AA /* Pods_LanguBrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED44117F41167A22CE5B585B /* Pods_LanguBrain.framework */; };
+		805027EB1D389E5700CE3F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805027EA1D389E5700CE3F1F /* AppDelegate.swift */; };
+		805027ED1D389E5700CE3F1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805027EC1D389E5700CE3F1F /* ViewController.swift */; };
+		805027F01D389E5700CE3F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805027EE1D389E5700CE3F1F /* Main.storyboard */; };
+		805027F21D389E5700CE3F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805027F11D389E5700CE3F1F /* Assets.xcassets */; };
+		805027F51D389E5700CE3F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805027F31D389E5700CE3F1F /* LaunchScreen.storyboard */; };
+		F6018C9E22D232E9008AE6CC /* MenuAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018C9D22D232E9008AE6CC /* MenuAbout.swift */; };
+		F6018CA022D2330C008AE6CC /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018C9F22D2330C008AE6CC /* About.swift */; };
+		F6018CA222D2454A008AE6CC /* MenuHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CA122D2454A008AE6CC /* MenuHelp.swift */; };
+		F6018CA422D24573008AE6CC /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CA322D24573008AE6CC /* Help.swift */; };
+		F6018CA622D25EE1008AE6CC /* Walkthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CA522D25EE1008AE6CC /* Walkthrough.swift */; };
+		F6018CA922D36FA1008AE6CC /* Opening.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CA822D36FA1008AE6CC /* Opening.swift */; };
+		F6018CAB22D371C3008AE6CC /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CAA22D371C3008AE6CC /* Welcome.swift */; };
+		F6018CAD22D377FC008AE6CC /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CAC22D377FC008AE6CC /* SpeechRecognition.swift */; };
+		F6018CAF22D37EB7008AE6CC /* LanguageDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CAE22D37EB7008AE6CC /* LanguageDetection.swift */; };
+		F6018CB122D38202008AE6CC /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CB022D38202008AE6CC /* TextToSpeech.swift */; };
+		F6018CB322D38766008AE6CC /* GetStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6018CB222D38766008AE6CC /* GetStarted.swift */; };
+		F6061A4822D00F7E006939ED /* TranslationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6061A4722D00F7E006939ED /* TranslationAPI.swift */; };
+		F6061A4A22D00F95006939ED /* TranslationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6061A4922D00F95006939ED /* TranslationManager.swift */; };
+		F6061A4C22D0EAC3006939ED /* GTAlertCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6061A4B22D0EAC3006939ED /* GTAlertCollection.swift */; };
+		F6061A4E22D14B47006939ED /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6061A4D22D14B47006939ED /* Menu.swift */; };
+		F6061A5022D21CFD006939ED /* MenuSupportedLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6061A4F22D21CFD006939ED /* MenuSupportedLanguages.swift */; };
+		F6061A5222D21DF4006939ED /* SupportedLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6061A5122D21DF4006939ED /* SupportedLanguages.swift */; };
+		F60E326922C39DD000EF01A4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E326822C39DD000EF01A4 /* GradientView.swift */; };
+		F60E326D22C426E300EF01A4 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60E326C22C426E200EF01A4 /* SWRevealViewController.m */; };
+		F60E327122C4E1CD00EF01A4 /* LanguagesPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E327022C4E1CD00EF01A4 /* LanguagesPopUp.swift */; };
+		F60E327322C4E7CC00EF01A4 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60E327222C4E7CC00EF01A4 /* LoadingCell.swift */; };
+		F60E327522C4E80600EF01A4 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60E327422C4E80600EF01A4 /* LoadingCell.xib */; };
+		F66BBC1022DBD67B00C96BC4 /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BBC0F22DBD67B00C96BC4 /* Step3.swift */; };
+		F66BBC1222DBD8A200C96BC4 /* Step4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BBC1122DBD8A200C96BC4 /* Step4.swift */; };
+		F66BBC1422DBDB3A00C96BC4 /* Step5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BBC1322DBDB3A00C96BC4 /* Step5.swift */; };
+		F66BBC1C22E49EB400C96BC4 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BBC1B22E49EB300C96BC4 /* PopUp.swift */; };
+		F66BBC1E22E4BA4D00C96BC4 /* DiffLangPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BBC1D22E4BA4D00C96BC4 /* DiffLangPop.swift */; };
+		F682F26B22E4DD1C0017954F /* PopUpSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F682F26A22E4DD1C0017954F /* PopUpSwitch.swift */; };
+		F68C97CC22C2C407003E5609 /* GoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C97CB22C2C407003E5609 /* GoogleTranslate.swift */; };
+		F68C97CE22C2C528003E5609 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F68C97CD22C2C528003E5609 /* GoogleService-Info.plist */; };
+		F6D54F5722DB6C1700E46161 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D54F5622DB6C1700E46161 /* Step1ViewController.swift */; };
+		F6D54F5922DB892300E46161 /* Step2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D54F5822DB892300E46161 /* Step2.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		805027E71D389E5700CE3F1F /* LanguBrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguBrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		805027EA1D389E5700CE3F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		805027EC1D389E5700CE3F1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		805027EF1D389E5700CE3F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		805027F11D389E5700CE3F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		805027F41D389E5700CE3F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		805027F61D389E5700CE3F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882F7A7BCDE6BA9564374562 /* Pods-LangBrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LangBrain.debug.xcconfig"; path = "Target Support Files/Pods-LangBrain/Pods-LangBrain.debug.xcconfig"; sourceTree = "<group>"; };
+		A18AB70BD9D6957750DF7F4B /* Pods-LangBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LangBrain.release.xcconfig"; path = "Target Support Files/Pods-LangBrain/Pods-LangBrain.release.xcconfig"; sourceTree = "<group>"; };
+		A5AA6F1D268E9F1D9DFFD55C /* Pods-LanguBrain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguBrain.debug.xcconfig"; path = "Target Support Files/Pods-LanguBrain/Pods-LanguBrain.debug.xcconfig"; sourceTree = "<group>"; };
+		C671F3E81AB290C97F48F559 /* Pods-LanguBrain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguBrain.release.xcconfig"; path = "Target Support Files/Pods-LanguBrain/Pods-LanguBrain.release.xcconfig"; sourceTree = "<group>"; };
+		ED44117F41167A22CE5B585B /* Pods_LanguBrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LanguBrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6018C9D22D232E9008AE6CC /* MenuAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAbout.swift; sourceTree = "<group>"; };
+		F6018C9F22D2330C008AE6CC /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		F6018CA122D2454A008AE6CC /* MenuHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHelp.swift; sourceTree = "<group>"; };
+		F6018CA322D24573008AE6CC /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		F6018CA522D25EE1008AE6CC /* Walkthrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walkthrough.swift; sourceTree = "<group>"; };
+		F6018CA722D26026008AE6CC /* OnboardKit-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnboardKit-Swift.h"; sourceTree = "<group>"; };
+		F6018CA822D36FA1008AE6CC /* Opening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opening.swift; sourceTree = "<group>"; };
+		F6018CAA22D371C3008AE6CC /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		F6018CAC22D377FC008AE6CC /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		F6018CAE22D37EB7008AE6CC /* LanguageDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetection.swift; sourceTree = "<group>"; };
+		F6018CB022D38202008AE6CC /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		F6018CB222D38766008AE6CC /* GetStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStarted.swift; sourceTree = "<group>"; };
+		F6061A4722D00F7E006939ED /* TranslationAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAPI.swift; sourceTree = "<group>"; };
+		F6061A4922D00F95006939ED /* TranslationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationManager.swift; sourceTree = "<group>"; };
+		F6061A4B22D0EAC3006939ED /* GTAlertCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTAlertCollection.swift; sourceTree = "<group>"; };
+		F6061A4D22D14B47006939ED /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		F6061A4F22D21CFD006939ED /* MenuSupportedLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSupportedLanguages.swift; sourceTree = "<group>"; };
+		F6061A5122D21DF4006939ED /* SupportedLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedLanguages.swift; sourceTree = "<group>"; };
+		F60E326622C2D16000EF01A4 /* Inter-Thin-BETA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin-BETA.ttf"; sourceTree = "<group>"; };
+		F60E326722C39A4900EF01A4 /* Barlow-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.otf"; sourceTree = "<group>"; };
+		F60E326822C39DD000EF01A4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F60E326A22C426D300EF01A4 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F60E326B22C426E100EF01A4 /* LanguBrain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LanguBrain-Bridging-Header.h"; sourceTree = "<group>"; };
+		F60E326C22C426E200EF01A4 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F60E327022C4E1CD00EF01A4 /* LanguagesPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LanguagesPopUp.swift; path = LanguBrain/LanguagesPopUp.swift; sourceTree = "<group>"; };
+		F60E327222C4E7CC00EF01A4 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		F60E327422C4E80600EF01A4 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		F66BBC0F22DBD67B00C96BC4 /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
+		F66BBC1122DBD8A200C96BC4 /* Step4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4.swift; sourceTree = "<group>"; };
+		F66BBC1322DBDB3A00C96BC4 /* Step5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step5.swift; sourceTree = "<group>"; };
+		F66BBC1B22E49EB300C96BC4 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		F66BBC1D22E4BA4D00C96BC4 /* DiffLangPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffLangPop.swift; sourceTree = "<group>"; };
+		F682F26A22E4DD1C0017954F /* PopUpSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpSwitch.swift; sourceTree = "<group>"; };
+		F68C97CB22C2C407003E5609 /* GoogleTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTranslate.swift; sourceTree = "<group>"; };
+		F68C97CD22C2C528003E5609 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6D54F5622DB6C1700E46161 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
+		F6D54F5822DB892300E46161 /* Step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2.swift; sourceTree = "<group>"; };
+		FEB16CA67764CDEAB7D0A43B /* Pods_LangBrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LangBrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		805027E41D389E5700CE3F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16E5CCC1807D5DE6768A93AA /* Pods_LanguBrain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		805027DE1D389E5700CE3F1F = {
+			isa = PBXGroup;
+			children = (
+				F60E327022C4E1CD00EF01A4 /* LanguagesPopUp.swift */,
+				805027E91D389E5700CE3F1F /* LanguBrain */,
+				805027E81D389E5700CE3F1F /* Products */,
+				AF82822A6E2D9165A12D9626 /* Pods */,
+				A3AB547CB1127DC7C19FFA55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		805027E81D389E5700CE3F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				805027E71D389E5700CE3F1F /* LanguBrain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		805027E91D389E5700CE3F1F /* LanguBrain */ = {
+			isa = PBXGroup;
+			children = (
+				805027EA1D389E5700CE3F1F /* AppDelegate.swift */,
+				805027EC1D389E5700CE3F1F /* ViewController.swift */,
+				F6061A4B22D0EAC3006939ED /* GTAlertCollection.swift */,
+				F68C97CB22C2C407003E5609 /* GoogleTranslate.swift */,
+				F6061A4722D00F7E006939ED /* TranslationAPI.swift */,
+				F6061A4922D00F95006939ED /* TranslationManager.swift */,
+				805027EE1D389E5700CE3F1F /* Main.storyboard */,
+				F682F26A22E4DD1C0017954F /* PopUpSwitch.swift */,
+				F66BBC1D22E4BA4D00C96BC4 /* DiffLangPop.swift */,
+				F66BBC1B22E49EB300C96BC4 /* PopUp.swift */,
+				F66BBC1322DBDB3A00C96BC4 /* Step5.swift */,
+				F66BBC1122DBD8A200C96BC4 /* Step4.swift */,
+				F66BBC0F22DBD67B00C96BC4 /* Step3.swift */,
+				F6D54F5822DB892300E46161 /* Step2.swift */,
+				F6D54F5622DB6C1700E46161 /* Step1ViewController.swift */,
+				F6018CB222D38766008AE6CC /* GetStarted.swift */,
+				F6018CB022D38202008AE6CC /* TextToSpeech.swift */,
+				F6018CAE22D37EB7008AE6CC /* LanguageDetection.swift */,
+				F6018CAC22D377FC008AE6CC /* SpeechRecognition.swift */,
+				F6018CAA22D371C3008AE6CC /* Welcome.swift */,
+				F6018CA822D36FA1008AE6CC /* Opening.swift */,
+				F6018CA522D25EE1008AE6CC /* Walkthrough.swift */,
+				F6018CA322D24573008AE6CC /* Help.swift */,
+				F6018CA122D2454A008AE6CC /* MenuHelp.swift */,
+				F6018C9D22D232E9008AE6CC /* MenuAbout.swift */,
+				F6018C9F22D2330C008AE6CC /* About.swift */,
+				F6061A5122D21DF4006939ED /* SupportedLanguages.swift */,
+				F6061A4F22D21CFD006939ED /* MenuSupportedLanguages.swift */,
+				F6061A4D22D14B47006939ED /* Menu.swift */,
+				F60E327422C4E80600EF01A4 /* LoadingCell.xib */,
+				F60E327222C4E7CC00EF01A4 /* LoadingCell.swift */,
+				805027F11D389E5700CE3F1F /* Assets.xcassets */,
+				805027F31D389E5700CE3F1F /* LaunchScreen.storyboard */,
+				F60E326822C39DD000EF01A4 /* GradientView.swift */,
+				F60E326A22C426D300EF01A4 /* SWRevealViewController.h */,
+				F6018CA722D26026008AE6CC /* OnboardKit-Swift.h */,
+				F60E326622C2D16000EF01A4 /* Inter-Thin-BETA.ttf */,
+				F60E326C22C426E200EF01A4 /* SWRevealViewController.m */,
+				F60E326722C39A4900EF01A4 /* Barlow-Thin.otf */,
+				F68C97CD22C2C528003E5609 /* GoogleService-Info.plist */,
+				805027F61D389E5700CE3F1F /* Info.plist */,
+				F60E326B22C426E100EF01A4 /* LanguBrain-Bridging-Header.h */,
+			);
+			path = LanguBrain;
+			sourceTree = "<group>";
+		};
+		A3AB547CB1127DC7C19FFA55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEB16CA67764CDEAB7D0A43B /* Pods_LangBrain.framework */,
+				ED44117F41167A22CE5B585B /* Pods_LanguBrain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF82822A6E2D9165A12D9626 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				882F7A7BCDE6BA9564374562 /* Pods-LangBrain.debug.xcconfig */,
+				A18AB70BD9D6957750DF7F4B /* Pods-LangBrain.release.xcconfig */,
+				A5AA6F1D268E9F1D9DFFD55C /* Pods-LanguBrain.debug.xcconfig */,
+				C671F3E81AB290C97F48F559 /* Pods-LanguBrain.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		805027E61D389E5700CE3F1F /* LanguBrain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805027F91D389E5700CE3F1F /* Build configuration list for PBXNativeTarget "LanguBrain" */;
+			buildPhases = (
+				E993CEAB500D91E501EFA91A /* [CP] Check Pods Manifest.lock */,
+				805027E31D389E5700CE3F1F /* Sources */,
+				805027E41D389E5700CE3F1F /* Frameworks */,
+				805027E51D389E5700CE3F1F /* Resources */,
+				A9A34026E5A8B01A26C75BAB /* [CP] Embed Pods Frameworks */,
+				E7A97D55A62C0DF4985092E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LanguBrain;
+			productName = Siri;
+			productReference = 805027E71D389E5700CE3F1F /* LanguBrain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		805027DF1D389E5700CE3F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Sahand Edrisian";
+				TargetAttributes = {
+					805027E61D389E5700CE3F1F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2RXQS7CK9P;
+						DevelopmentTeamName = "Stephen Edrisian";
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 805027E21D389E5700CE3F1F /* Build configuration list for PBXProject "LanguBrain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 805027DE1D389E5700CE3F1F;
+			productRefGroup = 805027E81D389E5700CE3F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805027E61D389E5700CE3F1F /* LanguBrain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		805027E51D389E5700CE3F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805027F51D389E5700CE3F1F /* LaunchScreen.storyboard in Resources */,
+				F68C97CE22C2C528003E5609 /* GoogleService-Info.plist in Resources */,
+				805027F21D389E5700CE3F1F /* Assets.xcassets in Resources */,
+				F60E327522C4E80600EF01A4 /* LoadingCell.xib in Resources */,
+				805027F01D389E5700CE3F1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9A34026E5A8B01A26C75BAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LanguBrain/Pods-LanguBrain-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/OnboardKit/OnboardKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnboardKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LanguBrain/Pods-LanguBrain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A97D55A62C0DF4985092E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LanguBrain/Pods-LanguBrain-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LanguBrain/Pods-LanguBrain-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E993CEAB500D91E501EFA91A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LanguBrain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		805027E31D389E5700CE3F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6061A5222D21DF4006939ED /* SupportedLanguages.swift in Sources */,
+				F66BBC1422DBDB3A00C96BC4 /* Step5.swift in Sources */,
+				F6061A4822D00F7E006939ED /* TranslationAPI.swift in Sources */,
+				F68C97CC22C2C407003E5609 /* GoogleTranslate.swift in Sources */,
+				805027ED1D389E5700CE3F1F /* ViewController.swift in Sources */,
+				F60E327122C4E1CD00EF01A4 /* LanguagesPopUp.swift in Sources */,
+				F6061A4A22D00F95006939ED /* TranslationManager.swift in Sources */,
+				F6D54F5922DB892300E46161 /* Step2.swift in Sources */,
+				F6018CA622D25EE1008AE6CC /* Walkthrough.swift in Sources */,
+				F66BBC1022DBD67B00C96BC4 /* Step3.swift in Sources */,
+				F6018CA922D36FA1008AE6CC /* Opening.swift in Sources */,
+				F6018C9E22D232E9008AE6CC /* MenuAbout.swift in Sources */,
+				F6018CAF22D37EB7008AE6CC /* LanguageDetection.swift in Sources */,
+				F6018CA222D2454A008AE6CC /* MenuHelp.swift in Sources */,
+				F6061A4E22D14B47006939ED /* Menu.swift in Sources */,
+				F6061A4C22D0EAC3006939ED /* GTAlertCollection.swift in Sources */,
+				F66BBC1C22E49EB400C96BC4 /* PopUp.swift in Sources */,
+				F6D54F5722DB6C1700E46161 /* Step1ViewController.swift in Sources */,
+				F682F26B22E4DD1C0017954F /* PopUpSwitch.swift in Sources */,
+				F60E326D22C426E300EF01A4 /* SWRevealViewController.m in Sources */,
+				F6018CA022D2330C008AE6CC /* About.swift in Sources */,
+				F60E327322C4E7CC00EF01A4 /* LoadingCell.swift in Sources */,
+				F66BBC1E22E4BA4D00C96BC4 /* DiffLangPop.swift in Sources */,
+				F6061A5022D21CFD006939ED /* MenuSupportedLanguages.swift in Sources */,
+				F6018CAB22D371C3008AE6CC /* Welcome.swift in Sources */,
+				F6018CB322D38766008AE6CC /* GetStarted.swift in Sources */,
+				F6018CB122D38202008AE6CC /* TextToSpeech.swift in Sources */,
+				F60E326922C39DD000EF01A4 /* GradientView.swift in Sources */,
+				F6018CA422D24573008AE6CC /* Help.swift in Sources */,
+				F6018CAD22D377FC008AE6CC /* SpeechRecognition.swift in Sources */,
+				F66BBC1222DBD8A200C96BC4 /* Step4.swift in Sources */,
+				805027EB1D389E5700CE3F1F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		805027EE1D389E5700CE3F1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805027EF1D389E5700CE3F1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		805027F31D389E5700CE3F1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805027F41D389E5700CE3F1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		805027F71D389E5700CE3F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		805027F81D389E5700CE3F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		805027FA1D389E5700CE3F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5AA6F1D268E9F1D9DFFD55C /* Pods-LanguBrain.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2RXQS7CK9P;
+				INFOPLIST_FILE = LanguBrain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.LanguBrain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LanguBrain/LanguBrain-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		805027FB1D389E5700CE3F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C671F3E81AB290C97F48F559 /* Pods-LanguBrain.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2RXQS7CK9P;
+				INFOPLIST_FILE = LanguBrain/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.LanguBrain;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LanguBrain/LanguBrain-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		805027E21D389E5700CE3F1F /* Build configuration list for PBXProject "LanguBrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805027F71D389E5700CE3F1F /* Debug */,
+				805027F81D389E5700CE3F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805027F91D389E5700CE3F1F /* Build configuration list for PBXNativeTarget "LanguBrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805027FA1D389E5700CE3F1F /* Debug */,
+				805027FB1D389E5700CE3F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 805027DF1D389E5700CE3F1F /* Project object */;
+}
